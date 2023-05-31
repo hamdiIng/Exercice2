@@ -22,7 +22,7 @@ public class TasksPage {
 
 	/* @FindBy */
 	@FindBy(how = How.XPATH, using = LOGIN)
-	public static WebElement textLogin;
+	public static WebElement loginBtn;
 	@FindBy(how = How.XPATH, using = PASSWORD)
 	public static WebElement textPassword;
 	
@@ -56,5 +56,7 @@ public class TasksPage {
 			System.out.println("Succesfull - The URL is changed");
 		}
 	}
+	
+	
 
 }

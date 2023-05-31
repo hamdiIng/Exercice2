@@ -1,17 +1,17 @@
 @LoginaddTasks
 Feature: Se rendre sur le site locale et effectuer une série de tests afin de vérifierla connexion et la gestion des taches
 
-  Background: 
-    Given Je me rends sur le site "todolist.url"
 
   @loginParamsVides
   Scenario: Se rendre sur le site locale et effectuer le test de connexion avec login et mot de passe  vide
+    Given Je me rends sur le site "todolist.url"
     When Je clique sur le bouton de connexion
     Then Je vérifie que le bouton de connexion est non cliquable
 
   @loginPasswordVides
   Scenario: Se rendre sur le site locale et effectuer le test de connexion avec mot de passe  vide
-    When Je saisie le login
+    Given Je me rends sur le site "todolist.url"
+     When Je saisie le login
     And Je clique sur le bouton de connexion
     Then Je vérifie que le bouton de connexion est non cliquable
 

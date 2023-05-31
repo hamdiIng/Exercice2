@@ -63,5 +63,8 @@ public class SeleniumUtils extends BasePage {
 		Boolean isElementDisplayed = element.isDisplayed();
 		return isElementDisplayed;
 	}
+	public boolean isCliquable(WebElement element) {
+		return element.isEnabled();
+	}
 
 }

@@ -26,11 +26,16 @@ public class TasksStepDefinition {
 	}
 	@When("Je clique sur le bouton de connexion")
 	public void jeCliqueSurLeBoutonDeConnexion() {
+		TasksPage.loginBtn.click();
 	  
 	}
 	@Then("Je vérifie que le bouton de connexion est non cliquable")
-	public void jeVérifieQueLeBoutonDeConnexionEstNonCliquable() {
-	
+	public Boolean jeVérifieQueLeBoutonDeConnexionEstNonCliquable() {
+		Boolean x =seleniumUtils.isCliquable(tasksPage.loginBtn);
+		System.out.println(x.equals(false));
+		return (x.equals(false));
+		
+
 	}
 
 	@When("Je saisie le login")
