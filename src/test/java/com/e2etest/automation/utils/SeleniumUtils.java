@@ -58,13 +58,18 @@ public class SeleniumUtils extends BasePage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
-	
+
 	public Boolean isElementDisplayed(WebElement element) {
 		Boolean isElementDisplayed = element.isDisplayed();
 		return isElementDisplayed;
 	}
+
 	public boolean isCliquable(WebElement element) {
 		return element.isEnabled();
+	}
+
+	public void saisie(WebElement element, String s) {
+		element.sendKeys(s);
 	}
 
 }

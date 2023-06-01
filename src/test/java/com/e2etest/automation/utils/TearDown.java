@@ -24,7 +24,7 @@ public class TearDown {
 
 		}
 
-		Setup.getDriver().quit();
+		//Setup.getDriver().quit();
 
 	}
 

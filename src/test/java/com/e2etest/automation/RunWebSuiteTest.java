@@ -17,7 +17,7 @@ import io.cucumber.junit.CucumberOptions;
  * files, step definitions, reporting integration
  */
 @CucumberOptions(features = { "src/spec/features/" }, plugin = { "pretty", "html:target/cucumber-report.html",
-		"json:target/cucumber-report.json" }, tags = ("@loginParamsVides"), monochrome = true, snippets = CAMELCASE)
+		"json:target/cucumber-report.json" }, tags = (""), monochrome = true, snippets = CAMELCASE)
 
 /**
  * This class is used to run the test, which is a JUnit Test Runner Class
