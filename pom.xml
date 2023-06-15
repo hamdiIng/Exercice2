@@ -138,11 +138,7 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
-        <dependency>
-        	<groupId>FirstProjectAutomationQA</groupId>
-        	<artifactId>FirstProjectAutomationQA</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
+       
     </dependencies>
 
   <build>
